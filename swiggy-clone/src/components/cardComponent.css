@@ -1,0 +1,54 @@
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #faf9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 275px;
+  margin-top: 20px;
+}
+
+.card-name {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-sec-name, .card-offer {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.card-offer {
+  color: #e63946;
+  font-weight: bold;
+}
+
+.card-image-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.card-button span {
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

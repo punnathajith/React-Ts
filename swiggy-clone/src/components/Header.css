@@ -1,0 +1,39 @@
+.header{
+  background-color: #ff5200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  width: 100vw;
+}
+
+.component{
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.logo{
+  height: 80px;
+}
+.items > ul {
+  display: flex;
+ 
+}
+.items > ul > li {
+  padding: 10px 20px;
+  list-style: none;
+  color: white;
+  font-weight: 600;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: lightgray;
+}

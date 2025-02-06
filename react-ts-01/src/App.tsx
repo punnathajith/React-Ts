@@ -117,3 +117,39 @@ export default function App() {
     </div>
   );
 }
+
+
+
+// import React, {useState} from 'react'
+
+// function Child(props) {
+//   const {parentFunction} = props;
+//   const increment = () =>{
+//     parentFunction();
+//   }
+//   return (
+// 	<>
+// 		<button onClick={increment}>Click</button>
+// 	</>
+//   )
+// }
+
+// function Parent() {
+//   const [count, setCount] = useState(0)
+//   const parent = () =>{
+//     setCount(count + 1);
+//   }
+
+//   console.log(<Child/>);
+
+// return (
+//   <>
+// 	  <h1>Count : {count}</h1>
+// 	  <Child parentFunction={parent}/>
+
+
+//   </>
+// )
+// }
+
+// export default Parent

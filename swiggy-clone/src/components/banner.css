@@ -1,0 +1,20 @@
+
+
+.banner{
+  padding-top: 50px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff5200;
+}
+
+.container{
+  width: 50%;
+  text-align: center;
+}
+
+.heading{
+  font-size: 45px;
+  color: white;
+}
