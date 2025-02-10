@@ -1,6 +1,7 @@
-import { useState,useEffect } from "react";
+import { useEffect,useContext } from "react";
 import CardComponent from "./CardComponent";
-import './body.css'
+import './body.css';
+import { DataContext } from "../context/Datacontext";
 
 interface ResData {
   info: {
@@ -13,7 +14,7 @@ interface ResData {
 }
 
 const Body = () =>{
-  const [datas,setData] = useState([]);
+  const { data1, setData1 } = useContext(DataContext);
  
   useEffect(()=>{
     fetchData();
@@ -22,14 +23,14 @@ const Body = () =>{
   const fetchData = async () =>{
     const response =  await fetch("https://instafood.onrender.com/api/restaurants?lat=12.9351929&lng=77.62448069999999")
     const data = await response.json();
-    setData(data.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
+    setData1(data.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
   }
-  console.log(datas);
+  console.log(data1);
   return(
     <div className="body">
       <div className="containers">
         {
-          datas.map((res:ResData)=>(
+          data1.map((res:ResData)=>(
             <CardComponent key={res.info.id}  resData={res}/>
           ))
         }
